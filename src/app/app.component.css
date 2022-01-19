@@ -1,0 +1,27 @@
+div{
+    text-align: left;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: goldenrod;
+    border: rosybrown;
+    border-width: 1.5;
+}
+
+table, tr{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid brown;
+    border-collapse:separate;
+    text-align: center;
+    box-align: center;
+}
+td{
+    color: darkolivegreen;
+    font-weight: bold;
+    background-color: rgb(170, 176, 245);
+}
+body {
+    background-color: linear-gradient(to right);
+    color: pink, olivedrab;
+}

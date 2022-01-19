@@ -1,0 +1,31 @@
+<div>
+  <h1>List of Things to Do:</h1>
+
+  <table>
+      <tr>
+        <th>Task:</th>
+        <th>Status:</th>
+      </tr>
+      <ng-container *ngFor="let tsk of tasks">
+        <tr>
+          <td><ul><li>{{ tsk.task }} <button (click)="removeFromList()">&times;</button> </li></ul></td> <br />
+          <td><button *ngIf="!tsk.completed" (click)="completeTask(tsk)">
+            Done
+          </button></td>
+        </tr>
+    </ng-container>
+
+    <div>
+      <h2>Add a new task:</h2>
+        Task: <input type="text" [(ngModel)]="newtask" /> <br/>
+        <button (click)="addTask()">
+          Add!
+        </button>
+    </div>
+    
+    </table>
+</div>
+
+
+  
+ 
